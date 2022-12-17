@@ -18,16 +18,31 @@ export default defineComponent({
         batteryLevel: {
             type: Number,
             required: true,
+            default: 100,
+            validator(value: number) {
+                return value >= 0 && value <= 100;
+            }
         },
     },
     setup(props) {
+        // if (!(props.batteryLevel >= 0 && props.batteryLevel <= 100)) throw new Error('the value of battery level must between 0-100')
+        const level = computed(()=> {
+            if(typeof props.batteryLevel !== 'number'){
+                return 100;
+            }else{
+                if(props.batteryLevel >= 0 && props.batteryLevel <= 100){
+                    return props.batteryLevel;
+                }else{
+                    return 0;
+                }
+            }
+        })
         const batteryBg = computed(() => {
-            let level = props.batteryLevel;
-            if (level >= 80) {
+            if (level.value >= 80) {
                 return "high"
-            } else if (level < 80 && level >= 20) {
+            } else if (level.value < 80 && level.value >= 20) {
                 return "medium"
-            } else if (level < 20 && level > 0) {
+            } else if (level.value < 20 && level.value > 0) {
                 return "low"
             } else {
                 return ""

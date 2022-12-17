@@ -4,5 +4,5 @@ import EnvUI from 'env-ui';
 
 const app = createApp(App);
 app.use(EnvUI);
-console.log("app",app);
+// console.log("app",app);
 app.mount('#app');
