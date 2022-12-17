@@ -1,10 +1,11 @@
+import { App } from 'vue';
 import Button from '@env/Button';
 import Icon from '@env/icon';
-import { App } from 'vue';
-
+import Battery from '@env/battery';
 const components = [
     Button,
-    Icon
+    Icon,
+    Battery,
 ];
 
 const install = (app:App) => {
