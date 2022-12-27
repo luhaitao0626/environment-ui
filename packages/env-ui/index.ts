@@ -2,10 +2,16 @@ import { App } from 'vue';
 import Button from '@env/Button';
 import Icon from '@env/icon';
 import Battery from '@env/battery';
+import Temperature from '@env/temperature';
+import Humidity from '@env/humidity';
+import Formaldehyde from '@env/formaldehyde'
 const components = [
     Button,
     Icon,
     Battery,
+    Temperature,
+    Humidity,
+    Formaldehyde,
 ];
 
 const install = (app:App) => {
