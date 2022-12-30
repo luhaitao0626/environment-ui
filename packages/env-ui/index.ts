@@ -4,7 +4,9 @@ import Icon from '@env/icon';
 import Battery from '@env/battery';
 import Temperature from '@env/temperature';
 import Humidity from '@env/humidity';
-import Formaldehyde from '@env/formaldehyde'
+import Formaldehyde from '@env/formaldehyde';
+import Indicator from '@env/indicator';
+import Controller from '@env/controller';
 const components = [
     Button,
     Icon,
@@ -12,6 +14,8 @@ const components = [
     Temperature,
     Humidity,
     Formaldehyde,
+    Indicator,
+    Controller,
 ];
 
 const install = (app:App) => {

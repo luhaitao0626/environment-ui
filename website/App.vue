@@ -1,10 +1,10 @@
 <template>
     <div>
         <e-button>123</e-button>
-        <hr/>
+        <hr />
 
         <e-icon></e-icon>
-        <hr/>
+        <hr />
 
         <div class="flex-row">
             <e-battery :batteryLevel="10"></e-battery>
@@ -14,29 +14,36 @@
             <e-battery :batteryLevel="90"></e-battery>
             <e-battery :batteryLevel="100"></e-battery>
         </div>
-        <hr/>
+        <hr />
 
         <div class="flex-row">
             <e-temperature :temperature="12"></e-temperature>
             <e-temperature :temperature="20"></e-temperature>
             <e-temperature :temperature="30"></e-temperature>
         </div>
-        <hr/>
+        <hr />
 
         <e-humidity :humidity="30"></e-humidity>
-        <hr/>
+        <hr />
 
-        
+
         <div class="flex-row">
             <e-formaldehyde :formaldehyde="20"></e-formaldehyde>
             <e-formaldehyde :formaldehyde="2600"></e-formaldehyde>
         </div>
+        <hr />
+
+        <div style="width:330px;background: #27263f;">
+            <e-indicator name="PM2.5" value="100"></e-indicator>
+        </div>
         <hr/>
+        
+        <e-controller></e-controller>
     </div>
 </template>
 <style>
-.flex-row{
-    display:flex;
+.flex-row {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
