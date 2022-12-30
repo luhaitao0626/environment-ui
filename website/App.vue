@@ -39,6 +39,12 @@
         <hr/>
         
         <e-controller></e-controller>
+        <hr/>
+
+        <e-wave percent="50"></e-wave>
+        <hr/>
+
+        <e-filter max="150" filterUsage="120"></e-filter>
     </div>
 </template>
 <style>

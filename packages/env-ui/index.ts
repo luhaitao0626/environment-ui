@@ -7,6 +7,8 @@ import Humidity from '@env/humidity';
 import Formaldehyde from '@env/formaldehyde';
 import Indicator from '@env/indicator';
 import Controller from '@env/controller';
+import Wave from '@env/wave';
+import Filter from '@env/filter';
 const components = [
     Button,
     Icon,
@@ -16,10 +18,12 @@ const components = [
     Formaldehyde,
     Indicator,
     Controller,
+    Wave,
+    Filter,
 ];
 
-const install = (app:App) => {
-    components.forEach(component=>{
+const install = (app: App) => {
+    components.forEach(component => {
         app.component(component.name, component)
     })
 }
