@@ -21,8 +21,14 @@ lerna init
 9. button/下建一个index.ts 导出内容
 import Button from './src/button'; ts不识别button.vue文件
 
+(npm 不支持 workspaces，所以之前安装依赖都要使用 yarn。) 不知道现在支不支持
+
+monorepo的项目结构，一般都会配合 yarn workspace 来管理包的依赖。
+
+```
 yarn add typescript -W    or
 yarn add typescript --ignore-workspace-root-check
+```
 
 npx tsc --init 创建了一个tsconfig.json
 

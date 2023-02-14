@@ -80,7 +80,7 @@ export default {
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .airAdjustBox {
-    // width: 1014px;
+    max-width: 1014px;
     width: 1014px;
     height: 300px;
     background: #27263f;
@@ -90,6 +90,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 0.5em;
 }
 
 // input[type="range"]:after {

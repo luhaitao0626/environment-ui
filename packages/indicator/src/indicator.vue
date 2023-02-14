@@ -143,10 +143,14 @@ export default defineComponent({
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .indicatorBox {
-    width: 100%;
-    height: 100%;
+    background-color: #27263f;
+    min-width: 400px;
+    max-width: 500px;
+    max-height: 150px;
     padding: 5px 10px 5px 10px;
     box-sizing: border-box;
+    margin: 5px;
+    border-radius: 0.5em;
 }
 
 //右上角:等级盒子 优良中差
